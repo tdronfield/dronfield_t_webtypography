@@ -1,49 +1,36 @@
-@font-face{
-  font-family: 'Goonies';
-  src:  url('Goonies.woff2') format('woff2'),
-        url('Goonies.woff') format('woff');
+body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.hidden{
-	display: none;
-}
-
-main {
-	width: 1024px;
+#container{
+	width: 700px;
 	margin: 0 auto;
 }
 
-header{
-	background-image: url(../images/goonies.jpg);
-	background-repeat: no-repeat;
-	height: 330px;
+h1{ 
+	font-weight: 300;
+	font-size: 34px; /* could also use ems here if we define a size for the body */
+	color: #9bac73;
+	letter-spacing: 1px;
+}
+h3{
+	font-weight: 700;
+	font-size: 14px;
+	color: #738152;
 }
 
-body{
-	font-size: 16px; /*an em is based on body font size, it is a relative measurement*/
+p{
+	color: #6b6b69;
+	font-size: 17px;
+	line-height: 28px
+	font-weight: 300;
 }
 
-.text-graphic{
-	font-size: 7.5em;
-	font-family: "Goonies", sans-serif;
-
-	background: linear-gradient(to bottom, #F27233 10%, #F9E639 60%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	position: relative;
-
-	left: 28px;
-	top: 150px;
-}
-
-.text-graphic span{
-	font-size: 3rem;
-	position: absolute;
-	top: -44px;
-	left: 30px;
-
-	background: linear-gradient(to bottom, #F27233 10%, #F9E639 60%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
+.drop-cap{
+	font-size: 100px;
+	font-weight: 400;
+	line-height: 70px;
+	float: left;
+	margin: 5px 10px 0 0;
 }
